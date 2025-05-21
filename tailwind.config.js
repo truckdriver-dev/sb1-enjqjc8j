@@ -5,22 +5,22 @@ export default {
     extend: {
       colors: {
         crypto: {
-          yellow: {
-            50: '#FFFDE7',
-            100: '#FFF9C4',
-            200: '#FFF59D',
-            300: '#FFF176',
-            400: '#FFEE58',
-            500: '#FFEB3B',  // Base yellow
-            600: '#FDD835',
-            700: '#FBC02D',
-            800: '#F9A825',
-            900: '#F57F17',
+          red: {
+            50: '#FFF5F5',
+            100: '#FFE3E3',
+            200: '#FFC9C9',
+            300: '#FFA7A7',
+            400: '#FF8787',
+            500: '#FF6B6B',  // Base red
+            600: '#FA5252',
+            700: '#F03E3E',
+            800: '#E03131',
+            900: '#C92A2A',
           },
           accent: {
             blue: '#3B82F6',
-            green: '#10B981',
             purple: '#8B5CF6',
+            green: '#10B981',
           },
           dark: {
             900: '#0F172A',

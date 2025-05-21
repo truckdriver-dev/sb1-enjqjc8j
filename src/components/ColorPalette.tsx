@@ -6,17 +6,17 @@ interface ColorPaletteProps {
 }
 
 const ColorPalette: React.FC<ColorPaletteProps> = ({ isDarkMode }) => {
-  const yellowColors = [
-    { color: "#FFFDE7", name: "Yellow 50", hexCode: "#FFFDE7" },
-    { color: "#FFF9C4", name: "Yellow 100", hexCode: "#FFF9C4" },
-    { color: "#FFF59D", name: "Yellow 200", hexCode: "#FFF59D" },
-    { color: "#FFF176", name: "Yellow 300", hexCode: "#FFF176" },
-    { color: "#FFEE58", name: "Yellow 400", hexCode: "#FFEE58" },
-    { color: "#FFEB3B", name: "Yellow 500", hexCode: "#FFEB3B" },
-    { color: "#FDD835", name: "Yellow 600", hexCode: "#FDD835" },
-    { color: "#FBC02D", name: "Yellow 700", hexCode: "#FBC02D" },
-    { color: "#F9A825", name: "Yellow 800", hexCode: "#F9A825" },
-    { color: "#F57F17", name: "Yellow 900", hexCode: "#F57F17" },
+  const redColors = [
+    { color: "#FFF5F5", name: "Red 50", hexCode: "#FFF5F5" },
+    { color: "#FFE3E3", name: "Red 100", hexCode: "#FFE3E3" },
+    { color: "#FFC9C9", name: "Red 200", hexCode: "#FFC9C9" },
+    { color: "#FFA7A7", name: "Red 300", hexCode: "#FFA7A7" },
+    { color: "#FF8787", name: "Red 400", hexCode: "#FF8787" },
+    { color: "#FF6B6B", name: "Red 500", hexCode: "#FF6B6B" },
+    { color: "#FA5252", name: "Red 600", hexCode: "#FA5252" },
+    { color: "#F03E3E", name: "Red 700", hexCode: "#F03E3E" },
+    { color: "#E03131", name: "Red 800", hexCode: "#E03131" },
+    { color: "#C92A2A", name: "Red 900", hexCode: "#C92A2A" },
   ];
 
   const accentColors = [
@@ -30,14 +30,14 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ isDarkMode }) => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className={`font-display font-bold text-3xl sm:text-4xl mb-8 ${isDarkMode ? 'text-white' : 'text-crypto-dark-900'}`}>
-            Yellow Palette
+            Red Palette
           </h2>
           <p className={`text-lg mb-10 ${isDarkMode ? 'text-crypto-light-300' : 'text-crypto-dark-700'}`}>
-            A comprehensive crypto-inspired yellow color palette, ranging from light to dark shades.
+            A comprehensive crypto-inspired red color palette, ranging from light to dark shades.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 mb-16">
-            {yellowColors.map((color) => (
+            {redColors.map((color) => (
               <ColorBlock 
                 key={color.hexCode}
                 color={color.color}
@@ -52,7 +52,7 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ isDarkMode }) => {
             Accent Colors
           </h2>
           <p className={`text-lg mb-10 ${isDarkMode ? 'text-crypto-light-300' : 'text-crypto-dark-700'}`}>
-            Complementary colors that work well with our crypto yellow palette.
+            Complementary colors that work well with our crypto red palette.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
@@ -72,4 +72,4 @@ const ColorPalette: React.FC<ColorPaletteProps> = ({ isDarkMode }) => {
   );
 };
 
-export default ColorPalette;
+export default ColorPalette

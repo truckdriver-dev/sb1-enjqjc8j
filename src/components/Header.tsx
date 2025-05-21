@@ -28,9 +28,9 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
     >
       <div className="container mx-auto px-4 py-4 sm:py-5 flex items-center justify-between">
         <div className="flex items-center">
-          <Hexagon className={`h-8 w-8 ${isDarkMode ? 'text-crypto-yellow-500' : 'text-crypto-yellow-600'} mr-2`} />
+          <Hexagon className={`h-8 w-8 ${isDarkMode ? 'text-crypto-red-500' : 'text-crypto-red-600'} mr-2`} />
           <h1 className={`font-display font-bold text-xl sm:text-2xl ${isDarkMode ? 'text-white' : 'text-crypto-dark-900'}`}>
-            Color<span className="text-crypto-yellow-600">Test</span>
+            Color<span className="text-crypto-red-600">Test</span>
           </h1>
         </div>
         
@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             onClick={toggleDarkMode}
             className={`p-2 rounded-full transition-colors ${
               isDarkMode 
-                ? 'bg-crypto-dark-700 hover:bg-crypto-dark-600 text-crypto-yellow-400' 
+                ? 'bg-crypto-dark-700 hover:bg-crypto-dark-600 text-crypto-red-400' 
                 : 'bg-crypto-light-200 hover:bg-crypto-light-300 text-crypto-dark-800'
             }`}
             aria-label="Toggle dark mode"
@@ -52,4 +52,4 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
   );
 };
 
-export default Header;
+export default Header
